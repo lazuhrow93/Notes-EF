@@ -8,3 +8,6 @@
 /Note/Note.App/obj
 /Note/Note.Data/obj
 /Note/Note.Domain/obj
+/Note/.vs/ProjectEvaluation
+/Note/Note.App/bin/Debug/net8.0
+/Note/Note.Data/bin/Debug/net8.0
