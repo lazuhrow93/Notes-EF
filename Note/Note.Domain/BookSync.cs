@@ -19,6 +19,7 @@ public class BookSync : IBookSync
     {
         _context = noteDbContext;
         _bookRepository = bookRepository;
+        _mapper = mapper;
     }
 
     public async Task<EntityEntry<Book>?> Add(BookModel bookModel)
@@ -32,8 +33,8 @@ public class BookSync : IBookSync
 
         var newEntity = _mapper.Map<Book>(bookModel);
 
-        var addResult = _context.Books!.Add(newEntity);
-        _context.SaveChanges();
+        var addResult = _bookRepository.Add(newEntity);
+        _bookRepository.Save();
 
         return addResult;
     }
