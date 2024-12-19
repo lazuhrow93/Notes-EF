@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35521.163 d17.12
+VisualStudioVersion = 17.12.35521.163
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Note.App", "Note.App\Note.App.csproj", "{CA375D18-7F5C-481D-A7B7-84BBEA295818}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Note.Data", "Note.Data\Note.Data.csproj", "{1496EFB0-D896-4F54-B743-F9ED544411AE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Note.Domain", "Note.Domain\Note.Domain.csproj", "{9DA9D56C-58A2-4170-B461-2E20740B73F7}"
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CA375D18-7F5C-481D-A7B7-84BBEA295818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CA375D18-7F5C-481D-A7B7-84BBEA295818}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CA375D18-7F5C-481D-A7B7-84BBEA295818}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CA375D18-7F5C-481D-A7B7-84BBEA295818}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1496EFB0-D896-4F54-B743-F9ED544411AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1496EFB0-D896-4F54-B743-F9ED544411AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1496EFB0-D896-4F54-B743-F9ED544411AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
