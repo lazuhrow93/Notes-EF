@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Note.Data;
 using Note.Data.Database;
 using Note.Data.Repository;
-using Note.Domain.Model;
+using Note.Domain.Model.Entity;
 
 namespace Note.Domain;
 
@@ -28,13 +28,13 @@ public class BookSync : IBookSync
             return null;
 
         var result = await _bookRepository.GetByTitle(bookModel.BookTitle);
-        if (result != null)
+        if (result != null) // book already added
             return null;
 
         var newEntity = _mapper.Map<Book>(bookModel);
 
         var addResult = _bookRepository.Add(newEntity);
-        _bookRepository.Save();
+        await _bookRepository.Save();
 
         return addResult;
     }

@@ -1,4 +1,4 @@
-﻿namespace Note.Domain.Model
+﻿namespace Note.Domain.Model.Entity
 {
     public class BookModel
     {

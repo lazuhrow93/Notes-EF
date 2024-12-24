@@ -6,6 +6,6 @@ public interface IEntityRepository<T>
     where T : Entity
 {
     EntityEntry<T> Add(T entity);
-    void Save();
+    Task Save();
 
 }

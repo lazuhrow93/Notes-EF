@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Note.App.Controllers.Add.RequestDto;
 using Note.Domain;
-using Note.Domain.Model;
+using Note.Domain.Model.Entity;
 
 namespace Note.App.Controllers;
 
@@ -32,7 +32,6 @@ public partial class AddingController : NoteController
 
         var mappedValue = _mapper.Map<BookModel>(addBookRequest);
         var result = await _bookSync.Add(mappedValue);
-        
 
         if (result?.State != Microsoft.EntityFrameworkCore.EntityState.Added)
         {

@@ -1,8 +1,9 @@
 ﻿using AutoMapper;
 using Note.App.Controllers.Add.RequestDto;
-using Note.Domain.Model;
+using Note.Domain.Model.Entity;
 
-namespace Note.App.Mapping;
+namespace Note.App.Controllers.Add.Mapping;
+
 public class AddControllerMapper : Profile
 {
     public AddControllerMapper()
@@ -11,3 +12,4 @@ public class AddControllerMapper : Profile
             .ForMember(d => d.BookTitle, opt => opt.MapFrom(s => s.Title));
     }
 }
+

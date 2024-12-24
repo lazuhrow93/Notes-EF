@@ -20,6 +20,8 @@ public class EntityRepository<T> : IEntityRepository<T>
         return _query.Add(entity);
     }
 
-    public void Save()
-        => _context.SaveChanges();
+    public Task Save()
+    {
+        return _context.SaveChangesAsync();
+    }
 }
